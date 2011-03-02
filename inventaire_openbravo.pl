@@ -2,15 +2,14 @@
 
 use DBI;
 
+#user config
 require "config_pull.pl";
 
-my $time = localtime(time);
-print $time;
-
+ 
 $dbh = DBI->connect('dbi:mysql:'.$POS_bd, $POS_user,$POS_pass)
  or die "Connection Error: $DBI::errstr\n";
 
-$sql = "select CODE, UNITS from products INNER JOIN stockcurrent ON products.ID=stockcurrent.PRODUCT;";
+$sql = "select CODE, UNITS, NAME from products INNER JOIN stockcurrent ON products.ID=stockcurrent.PRODUCT;";
     
 $sth = $dbh->prepare($sql);
 $sth->execute
@@ -19,4 +18,3 @@ $sth->execute
  while (@row = $sth->fetchrow_array) {
      print "@row\n";
  } 
-
