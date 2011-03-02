@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+
+# Default CONFIG VARIABLES
+$POS_host = "";
+$POS_user = "";
+$POS_pass = "";
+$POS_bd   = "";

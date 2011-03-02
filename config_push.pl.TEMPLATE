@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+# Default CONFIG VARIABLES
+$POS_host = "";
+$POS_port = "";
+$POS_pass = "";
+$Presta_host = "";
+$Presta_port = "";
+$Presta_pass = "";
