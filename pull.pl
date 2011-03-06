@@ -4,9 +4,6 @@ use DBI;
 
 require "config_pull.pl";
 
-my $time = localtime(time);
-print $time;
-
 $dbh = DBI->connect('dbi:mysql:'.$POS_bd, $POS_user,$POS_pass)
  or die "Connection Error: $DBI::errstr\n";
 
