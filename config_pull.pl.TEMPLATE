@@ -5,3 +5,5 @@ $POS_host = "";
 $POS_user = "";
 $POS_pass = "";
 $POS_bd   = "";
+
+return 1;
