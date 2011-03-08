@@ -1,0 +1,13 @@
+1. Puts pull.pl on your Openbravo DB host
+2. Puts pull.pl on your Prestashop DB host
+3. sync-bd.pl will synchronize the 2 DB, put it on your Openbravo DB host
+
+# When to synchronize.
+This script is hack to easily synchronize the databases. This is not a regular way to do it. This script has to be launch when orders from prestashop has been treated in openbravo pos. 
+
+# Master your stock
+This script reports the stock from openbravo to prestashop using ean13 id. Openbravo is master DB, prestashop db is slave.
+To use it properly, please verify your stock ad your ean13.
+
+# Warranty
+This script has been helpful to me. Use it with care and understand what is done behind before suing it into production. No warranty is provided.  
