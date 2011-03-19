@@ -4,8 +4,8 @@ dump_sql=`mktemp`
 echo $dump_sql
 
 ./pull.pl > $dump_sql
-scp $dump_sql lilibio@ftp.lilibio.com:/homez.387/lilibio/www/script/Sync-DB/temp/
-ssh lilibio@ftp.lilibio.com "cd www/script/Sync-DB/ && ./push.pl temp/$dump_sql"
-ssh lilibio@ftp.lilibio.com "rm www/script/Sync-DB/temp/*"
+scp $dump_sql lilibio@ftp.lilibio.com:/homez.387/lilibio/script/Sync-DB/temp/
+ssh lilibio@ftp.lilibio.com "cd script/Sync-DB/ && ./push.pl temp/$dump_sql"
+ssh lilibio@ftp.lilibio.com "rm script/Sync-DB/temp/*"
 
 
