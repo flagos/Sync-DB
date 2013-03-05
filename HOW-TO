@@ -1,5 +1,5 @@
 1. Puts pull.pl on your Openbravo DB host
-2. Puts pull.pl on your Prestashop DB host
+2. Puts push.pl on your Prestashop DB host
 3. sync-bd.pl will synchronize the 2 DB, put it on your Openbravo DB host
 
 # When to synchronize.
