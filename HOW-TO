@@ -1,6 +1,6 @@
-1. Puts pull.pl on your Openbravo DB host
-2. Puts push.pl on your Prestashop DB host
-3. sync-bd.pl will synchronize the 2 DB, put it on your Openbravo DB host
+1. Puts pull.pl and config_pull.pl_TEMPLATE on your Openbravo DB host. Rename config_pull.pl_TEMPLATE in config_pull.pl and modify it to set your mysql settings.
+2. Puts push.pl and config_push.pl_TEMPLATE on your Prestashop DB host. Do the same thing on config_push.pl_TEMPLATE.
+3. sync-bd.pl will synchronize the 2 DB, put it on your Openbravo DB host. Modify it to set your host address and your username.
 
 # When to synchronize.
 This script is hack to easily synchronize the databases. This is not a regular way to do it. This script has to be launch when orders from prestashop has been treated in openbravo pos. 
